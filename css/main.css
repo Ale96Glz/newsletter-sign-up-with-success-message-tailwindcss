@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply p-3 bg-neutral-dark-slate-grey text-white font-bold rounded-lg hover:bg-primary-tomato;
+  }
+  .input {
+    @apply border-2 border-neutral-grey p-3 rounded-lg;
+  }
+  .input-error {
+    @apply border-2 p-3 rounded-lg border-primary-tomato bg-primary-tomato-ligth placeholder:text-primary-tomato;
+  }
+  .main-card {
+    @apply bg-neutral-white py-0 md:grid md:grid-cols-2 md:px-4 md:py-6 md:gap-4 md:rounded-3xl;
+  }
+  .hidden-card {
+    @apply bg-neutral-white grid place-content-center content-between px-5 py-10 h-screen max-w-[375px] md:max-w-[500px] md:h-auto md:rounded-2xl md:gap-14 md:px-8;
+  }
+}
